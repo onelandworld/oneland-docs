@@ -1,0 +1,64 @@
+---
+id: users
+title: ''
+slug: /users
+hide_table_of_contents: true
+---
+
+## URL
+
+```
+https://open.oneland.world/api/v1/project/{projectId}/users
+```
+
+## Description
+
+Get a metaverse project's users stats in paginated way. Users stats will be indexed hourly for each metaverse project.
+
+Records will be returned **in time desending order**.
+
+:::note 
+Currently only **Decentraland** is supported for this API
+:::
+
+## Type
+
+GET
+
+## Header
+
+```
+"Authorization": "Bearer <YOUR-API-TOKEN>"
+```
+
+## Sample Curl Command
+```sh
+curl -X GET 'https://open.oneland.world/api/v1/project/{projectId}/users' \
+  --header 'Authorization: Bearer <YOUR-API-TOKEN>'
+```
+
+## QUERY PARAMS
+
+**offset**
+
+For pagination. Number of record offset from the beginning of the result list. Default to 0.
+
+**limit**
+
+For pagination. Maximum number of records to return. Default to 10.
+
+## Sample Response
+
+```json
+{
+    "code": 200,
+    "message": "success",
+    "data": [
+        {
+            "usersCount": 478,
+            "timestamp": "2022-08-23T08:00:00.000Z"
+        },
+        ...
+    ]
+}
+```

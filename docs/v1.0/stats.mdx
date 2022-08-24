@@ -1,0 +1,65 @@
+---
+id: stats
+title: ''
+slug: /stats
+hide_table_of_contents: true
+---
+
+## URL
+
+```
+https://open.oneland.world/api/v1/project/{projectId}/stats
+```
+
+## Description
+
+Get a metaverse project's stats data in paginated way. Stats will be indexed and calculated daily for each metaverse project.
+
+Records will be returned **in date desending order**.
+
+## Type
+
+GET
+
+## Header
+
+```
+"Authorization": "Bearer <YOUR-API-TOKEN>"
+```
+
+## Sample Curl Command
+```sh
+curl -X GET 'https://open.oneland.world/api/v1/project/{projectId}/stats' \
+  --header 'Authorization: Bearer <YOUR-API-TOKEN>'
+```
+
+## QUERY PARAMS
+
+**offset**
+
+For pagination. Number of record offset from the beginning of the result list. Default to 0.
+
+**limit**
+
+For pagination. Maximum number of records to return. Default to 10.
+
+## Sample Response
+
+```json
+{
+    "code": 200,
+    "message": "success",
+    "data": [
+        {
+            "volume_eth": 11.119435243263744,
+            "volume_usd": 18044.384029651268,
+            "market_cap_eth": 198235.04324377578,
+            "market_cap_usd": 321691630.03060013,
+            "holders_count": 7069,
+            "sales_count": 4,
+            "date": "2022-08-22"
+        },
+        ...
+    ]
+}
+```

@@ -5,4 +5,67 @@ slug: /projects
 hide_table_of_contents: true
 ---
 
-# Retrieve Projects
+## URL
+
+```
+https://open.oneland.world/api/v1/projects
+```
+
+## Description
+Get metaverse project list from OneLand platform.
+
+## Type
+GET
+
+## Header
+
+```
+"Authorization": "Bearer <YOUR-API-TOKEN>"
+```
+
+## Sample Curl Command
+
+```sh
+curl -X GET 'https://open.oneland.world/api/v1/projects' \
+  --header 'Authorization: Bearer <YOUR-API-TOKEN>'
+```
+
+## Sample Response
+
+```
+{
+    "code": 200,
+    "message": "success",
+    "data": [
+        {
+            "id": 1,
+            "name": "sandbox"
+        },
+        {
+            "id": 2,
+            "name": "decentraland"
+        },
+        {
+            "id": 3,
+            "name": "cryptovoxels"
+        },
+        {
+            "id": 4,
+            "name": "somniumspace"
+        },
+        {
+            "id": 5,
+            "name": "webbland"
+        },
+        {
+            "id": 6,
+            "name": "nftworld"
+        },
+        {
+            "id": 7,
+            "name": "otherdeed"
+        }
+    ]
+}
+```
+

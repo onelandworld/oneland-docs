@@ -28,12 +28,27 @@ module.exports = {
     {
       type: 'doc',
       id: 'v1.0/overview',
-      label: 'API Overview'
+      label: 'Data API Overview'
     },
     {
       type: 'doc',
       id: 'v1.0/projects',
-      label: 'Retreive Projects'
+      label: 'Retreive project list'
+    },
+    {
+      type: 'doc',
+      id: 'v1.0/stats',
+      label: 'Retreive project stats'
+    },
+    {
+      type: 'doc',
+      id: 'v1.0/floorPrices',
+      label: 'Retreive project floor prices'
+    },
+    {
+      type: 'doc',
+      id: 'v1.0/users',
+      label: 'Retreive project users data'
     }
   ]
 };
