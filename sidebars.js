@@ -33,22 +33,22 @@ module.exports = {
     {
       type: 'doc',
       id: 'v1.0/projects',
-      label: 'Retreive project list'
+      label: 'Retrieve project list'
     },
     {
       type: 'doc',
       id: 'v1.0/stats',
-      label: 'Retreive project stats'
+      label: 'Retrieve project stats'
     },
     {
       type: 'doc',
       id: 'v1.0/floorPrices',
-      label: 'Retreive project floor prices'
+      label: 'Retrieve project floor prices'
     },
     {
       type: 'doc',
       id: 'v1.0/users',
-      label: 'Retreive project users data'
+      label: 'Retrieve project users data'
     }
   ]
 };
