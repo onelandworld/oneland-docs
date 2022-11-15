@@ -12,12 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
         
-      - name: Install dependencies
-        uses: Borales/actions-yarn@v2.3.0
+      - name: Setup Node v16
+        uses: actions/setup-node@v1
         with:
-          cmd: install
+          node-version: v16.16.0
+
+      - name: Install dependencies
+        run: yarn install
 
       - name: Build for production
-        uses: Borales/actions-yarn@v2.3.0
-        with:
-          cmd: build
+        run: yarn build
