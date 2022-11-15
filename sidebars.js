@@ -25,30 +25,49 @@ module.exports = {
    */
 
   mySidebar: [
-    {
-      type: 'doc',
-      id: 'v1.0/overview',
-      label: 'Data API Overview'
-    },
-    {
-      type: 'doc',
-      id: 'v1.0/projects',
-      label: 'Retrieve project list'
-    },
-    {
-      type: 'doc',
-      id: 'v1.0/stats',
-      label: 'Retrieve project stats'
-    },
-    {
-      type: 'doc',
-      id: 'v1.0/floorPrices',
-      label: 'Retrieve project floor prices'
-    },
-    {
-      type: 'doc',
-      id: 'v1.0/users',
-      label: 'Retrieve project users data'
-    }
+   {
+      type: 'category',
+      label: 'Data & Analytics',
+      collapsed: false,
+      items: [
+               {
+              type: 'doc',
+              id: 'dataitems',
+              label: 'Data Items'
+               }
+             ]
+   },
+   {
+       type: 'category',
+       label: 'Data API',
+       collapsed: false,
+         items: [
+                {
+                 type: 'doc',
+                 id: 'v1.0/overview',
+                 label: 'Data API Overview'
+                },
+                {
+                 type: 'doc',
+                 id: 'v1.0/projects',
+                 label: 'Retrieve project list'
+                },
+                {
+                 type: 'doc',
+                 id: 'v1.0/stats',
+                 label: 'Retrieve project stats'
+                },
+                {
+                 type: 'doc',
+                 id: 'v1.0/floorPrices',
+                 label: 'Retrieve project floor prices'
+                },
+                {
+                 type: 'doc',
+                 id: 'v1.0/users',
+                 label: 'Retrieve project users data'
+                }
+               ]
+   }
   ]
 };
